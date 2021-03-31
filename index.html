@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body oncontextmenu='return false' class='snippet-body' style="background-color: #222">
+    <div class="wrapper">
+        <div class="wrap" id="q1">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"><span id="n1"> </span>1 of 4 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 1. Where would you like to travel to?</div>
+            <div class="pt-4">
+                <form id = "ques1"> 
+                    <label class="options">Europe <input type="radio" name="ques1" value="Europe"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Brazil <input type="radio" name="ques1" value="Brazil"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Indiana <input type="radio" name="ques1" value="Indiana"> <span class="checkmark"></span> </label>
+                </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> 
+                <button class="btn btn-primary" id="next1">Next <span class="fas fa-arrow-right"></span> </button>
+            </div>
+        </div>
+        <div class="wrap" id="q2">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"> <span id="n2"> </span>2 of 4 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 2. Where would you go to relax?</div>
+            <div class="pt-4">
+                <form id = "ques2"> 
+                    <label class="options">Lake <input type="radio" name="ques2" value="Lake"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Beach <input type="radio" name="ques2" value="Beach"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Trip <input type="radio" name="ques2" value="Trip"> <span class="checkmark"></span> </label> 
+                </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> 
+                <button class="btn btn-primary mx-3" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> <button class="btn btn-primary" id="next2">Next <span class="fas fa-arrow-right"></span> </button> 
+            </div>
+        </div>
+        <div class="wrap" id="q3">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"> <span id="n3"> </span>3 of 4 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 3. Which among the following animal do you like?</div>
+            <div class="pt-4">
+                <form id = "ques3"> 
+                    <label class="options">Dog <input type="radio" name="ques3" value="Dog"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Mouse <input type="radio" name="ques3" value="Mouse"> <span class="checkmark"></span> </label><br> 
+                    <label class="options">Bird <input type="radio" name="ques3" value="Bird"> <span class="checkmark"></span> </label>
+                </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> 
+                <button class="btn btn-primary mx-3" id="back2"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> <button class="btn btn-primary" id="next3">Next <span class="fas fa-arrow-right"></span> </button> 
+            </div>
+        </div>
+        <div class="wrap" id="q4">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"> <span id="n4"> </span>4 of 4 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 4. Which would you prefer?</div>
+            <div class="pt-4">
+                <form id = "ques4"> 
+                    <label class="options">Cycle <input type="radio" name="ques4" value="Cycle"> <span class="checkmark"></span> </label> <br>
+                    <label class="options">Drives <input type="radio" name="ques4" value="Drives"> <span class="checkmark"></span> </label> <br>
+                    <label class="options">Flight <input type="radio" name="ques4" value="Flight"> <span class="checkmark"></span> </label>
+                </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> <button class="btn btn-primary mx-3" id="back3"> <span class="fas fa-arrow-left pr-2"></span>Previous </button> <button class="btn btn-primary" id="submit" onclick="submitForm()">Submit </button> </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
